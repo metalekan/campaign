@@ -20,12 +20,6 @@ main {
   /* background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(32,164,243,1) 50%, rgba(0,212,255,1) 100%);     */
 }
 
-.shadow{
-  background-color: #fff;
-  /* padding: 27px; */
-  /* border-radius: 9px; */
-  /* min-width: 250px; */
-  /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;} */
 
 .card {
   display: flex;
