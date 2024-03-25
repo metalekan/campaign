@@ -1,5 +1,3 @@
-lucide.createIcons();
-
 let el2 = document.querySelector(".banner");
 el2.setAttribute("data-scroll", "");
 
@@ -16,14 +14,14 @@ ScrollOut({
   },
 });
 
-
 const worksArray = [
   {
     id: 1,
     name: "Expert Instruction",
     detail:
       "Learn from industry professionals who are experts in their field and passionate about sharing their ",
-    image: "./images/mockup.jpg",
+    image:
+      "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "emawodia.html",
   },
   {
@@ -31,7 +29,8 @@ const worksArray = [
     name: "Hands-On Experience",
     detail:
       "Gain practical, real-world experience that will set you apart in the competitive tech job market.",
-    image: "./images/mockup.jpg",
+    image:
+      "https://images.unsplash.com/photo-1669023414180-4dcf35d943e1?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "xtralarge.html",
   },
   {
@@ -39,15 +38,17 @@ const worksArray = [
     name: "Internship Opportunity",
     detail:
       "Stand a chance to secure an internship at Tech Champions upon completing your training.",
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "paulano.html",
   },
   {
     id: 4,
-    name: "Employment  Referrals",
+    name: "Employment Referrals",
     detail:
       "Access exclusive job opportunities through our network of tech companies looking for top talent.",
-    image: "",
+    image:
+      "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "dees.html",
   },
 ];
@@ -58,15 +59,17 @@ const worksHTML = worksArray
     (item, index) => `
       <div class="card">
           <div class="card-image-container">
-          <img class="h-full w-full object-cover object-center" src="https://images.unsplash.com/photo-1599949104055-2d04026aee1e?q=80&w=773&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=image_${index}/>
+          <img class="h-full w-full object-cover object-center" src=${item.image} alt=${index}/>
           </div>
           <p class="font-bold">${item.name}</p>
-          <p class="text-sm">${item.detail}</p>
-          <button class="cursor-pointer transition-all bg-[#002EBA] text-white px-6 py-2 rounded-lg
-          border-[#002EBA]
-          border-b-[4px] hover:brightness-110
-          active:border-b-[2px] active:brightness-90 active:translate-y-[2px] text-sm">
-          Get started</button>
+          <p class="text-sm mt-1">${item.detail}</p>
+          <a href="register.html">
+            <button class="cursor-pointer transition-all bg-[#20a4f3] text-white px-6 py-2 rounded-lg
+            border-[#20a4f3]
+            border-b-[4px] hover:brightness-110
+            active:border-b-[2px] active:brightness-90 active:translate-y-[2px] text-sm w-full mt-6">
+            Get started</button>
+          </a>
           </div>
 
           `
