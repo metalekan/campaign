@@ -104,6 +104,7 @@
               </svg>
             </div>
             <input
+            id="email"
               type="text"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full ps-10 p-2.5"
             />
@@ -118,7 +119,7 @@
 
         <div>
           <label class="block mb-2 text-sm font-medium text-gray-900"
-            >Phone Number(Whatsapp):</label
+            >Phone Number (Whatsapp):</label
           >
           <div class="relative">
             <div
@@ -141,6 +142,7 @@
               </svg>
             </div>
             <input
+              id="phoneNo"
               type="text"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full ps-10 p-2.5"
             />
@@ -178,12 +180,13 @@
               </svg>
             </div>
             <input
+            id="address"
               type="text"
               class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full ps-10 p-2.5"
             />
           </div>
           <small
-            id="AddressError"
+            id="addressError"
             class="hidden text-sm text-red-600 dark:text-red-500"
             ><span class="font-medium">Oops!</span> Address can not be
             empty!</small
@@ -192,17 +195,17 @@
 
         <div>
           <label
-            for="countries"
+            for="techKnowledgeLevel"
             class="block mb-2 text-sm font-medium text-gray-900"
-            >Level of Tech Knowledge:</label
-          >
+          >Level of Tech Knowledge:</label>
           <select
+            id="techKnowledgeLevel"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full p-2.5"
           >
             <option value="">--Make a Selection--</option>
-            <option>Newbie</option>
-            <option>Intermediate</option>
-            <option>Professional</option>
+            <option value="newbie">Newbie</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="professional">Professional</option>
           </select>
         </div>
 
@@ -271,23 +274,6 @@
         </button>
       </form>
     </main>
-    <script>
-      document
-        .getElementById("registrationForm")
-        .addEventListener("submit", function (event) {
-          const fullName = document.getElementById("fullName").value.trim();
-          const fullNameError = document.getElementById("fullNameError");
-          const emailError = document.getElementById("emailError");
-          const phoneNoError = document.getElementById("phoneNoError");
-          const addressError = document.getElementById("addressError");
-
-          if (fullName === "") {
-            fullNameError.classList.remove("hidden");
-            event.preventDefault();
-          } else {
-            fullNameError.classList.add("hidden");
-          }
-        });
-    </script>
+    <script src="register.js"></script>
   </body>
 </html>
