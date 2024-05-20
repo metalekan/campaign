@@ -23,7 +23,6 @@ main {
   /* background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(32,164,243,1) 50%, rgba(0,212,255,1) 100%);     */
 }
 
-
 .card {
   display: flex;
   flex-direction: column;
