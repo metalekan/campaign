@@ -72,13 +72,11 @@
 
           <h1
             data-scroll
-            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl max-w-screen-lg mx-auto animate__animated animate__fast"
+            class="mb-4 text-4xl font-extrabold tracking-wide text-white md:text-5xl lg:text-6xl max-w-screen-lg mx-auto animate__animated animate__fast capitalize"
           >
-            Unlock Your Future in Tech: Enroll Now for Cutting-Edge
-            <span class="text-[#20a4f3]"
-              >Fullstack, Front-End, Back-End, Training, Digital Marketing,
-              UI/UX Training!</span
-            >
+            Unlock Your Future in Tech:
+            <span class="text-[#20a4f3]">Enroll Now</span> for Cutting-Edge
+            Training program!
           </h1>
           <p
             class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 max-w-screen-lg mx-auto animate__animated animate__fast"
@@ -86,8 +84,7 @@
             Are you ready to transition your career to new heights with the most
             sought-after tech skills in today's digital landscape? Look no
             further! Our upcoming tech training program is your gateway to
-            mastering Digital Marketing, UI/UX Design, Full Stack Development,
-            Front-End Engineering, and Back-End Programming.
+            mastering Digital Skills.
           </p>
           <div class="flex items-center gap-3 lg:gap-6">
             <a href="register.html">
@@ -478,7 +475,7 @@
           class="px-4 lg:px-6 xl:px-20 py-10 mb-10 lg:mb-20 mx-auto max-w-screen-xl text-center flex items-center justify-between bg-gray-100 rounded-2xl"
         >
           <h1
-            class="basis-1/2 mb-4 text-md font-extrabold tracking-tight leading-none lg:text-2xl text-start text-[#20a4f3]"
+            class="basis-1/2 mb-4 text-md font-extrabold tracking-normal leading-none lg:text-2xl text-start text-[#20a4f3]"
           >
             Ready to become a Tech Champion? Start your journey with us today!
           </h1>
@@ -687,7 +684,7 @@
           <div class="cardd-image-container">
           <img class="h-full w-full object-cover object-center" src=${item.image} alt="loading"/>
           </div>
-          <p class="font-bold">${item.name}</p>
+          <p class="text-xl font-bold text-[#20a4f3]">${item.name}</p>
           <p class="text-sm mt-1">${item.detail}</p>
           <a href="register.html">
             <button class="cursor-pointer transition-all bg-[#20a4f3] text-white px-6 py-2 rounded-lg
@@ -809,8 +806,9 @@
 
       courseContainer.innerHTML = courseHTML;
       if (courseContainer.children.length > 0) {
-        const lastChild = courseContainer.children[courseContainer.children.length - 1];
-        lastChild.classList.add('lg:col-span-2')
+        const lastChild =
+          courseContainer.children[courseContainer.children.length - 1];
+        lastChild.classList.add("lg:col-span-2");
       }
     </script>
   </body>
