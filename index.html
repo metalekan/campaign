@@ -195,7 +195,7 @@
               width="40"
               height="40"
               src="https://img.icons8.com/external-kmg-design-outline-color-kmg-design/64/external-hour-glass-business-management-kmg-design-outline-color-kmg-design.png"
-              alt="external-hour-glass-business-management-kmg-design-outline-color-kmg-design"
+              alt="loading"
             />
             <span
               class="mb-4 text-md md:text-xl lg:text-2xl font-bold leading-none tracking-tight text-[#20a4f3]"
@@ -214,7 +214,7 @@
               width="40"
               height="40"
               src="https://img.icons8.com/papercut/60/stopwatch.png"
-              alt="stopwatch"
+              alt="loading"
             />
             <span
               class="mb-4 text-md md:text-xl lg:text-2xl font-bold leading-none tracking-tight text-[#20a4f3]"
@@ -234,7 +234,7 @@
               width="40"
               height="40"
               src="https://img.icons8.com/fluency/48/calendar--v1.png"
-              alt="calendar--v1"
+              alt="loading"
             />
             <span
               class="mb-4 text-md md:text-xl lg:text-2xl font-bold leading-none tracking-tight text-[#20a4f3]"
@@ -311,7 +311,13 @@
               </div>
             </div>
           </div>
-          <p class="text-base tracking-normal mt-10">
+          <div class="py-8 px-4 mx-auto max-w-screen-xl">
+            <div
+              id="course"
+              class="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6 mt-20"
+            ></div>
+          </div>
+          <p class="text-base tracking-normal mt-10 hidden">
             Are you ready to level up your tech game and become a true Tech
             Champion? Join us at Tech Champions for an immersive and
             comprehensive training experience that will elevate your skills to
@@ -326,12 +332,7 @@
       </section>
 
       <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-          <div
-            id="course"
-            class="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-6 mt-20"
-          ></div>
-        </div>
+       
       </section>
       <section class="bg_gradient">
         <div class="py-10 lg:py-20 px-4 mx-auto max-w-screen-xl">
@@ -661,7 +662,7 @@
           (item, index) => `
       <div class="cardd">
           <div class="cardd-image-container">
-          <img class="h-full w-full object-cover object-center" src=${item.image} alt=${index}/>
+          <img class="h-full w-full object-cover object-center" src=${item.image} alt="loading"/>
           </div>
           <p class="font-bold">${item.name}</p>
           <p class="text-sm mt-1">${item.detail}</p>
@@ -718,12 +719,21 @@
           link: "dees.html",
         },
         {
-          id: 4,
+          id: 5,
           name: "Data Analysis Training ",
           detail:
             "Access exclusive job opportunities through our network of tech companies looking for top talent.",
           image:
             "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          link: "dees.html",
+        },
+        {
+          id: 6,
+          name: "UI/UX Training ",
+          detail:
+            "Access exclusive job opportunities through our network of tech companies looking for top talent.",
+          image:
+            "https://images.unsplash.com/photo-1633355444159-0752f19560a4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           link: "dees.html",
         },
       ];
