@@ -57,8 +57,8 @@ const worksContainer = document.getElementById("container");
 const worksHTML = worksArray
   .map(
     (item, index) => `
-      <div class="card">
-          <div class="card-image-container">
+      <div class="cardd">
+          <div class="cardd-image-container">
           <img class="h-full w-full object-cover object-center" src=${item.image} alt=${index}/>
           </div>
           <p class="font-bold">${item.name}</p>
