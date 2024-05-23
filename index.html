@@ -208,9 +208,9 @@
 
       <section class="bg_gradient py-10 lg:py-20">
         <div
-          class="max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 justify-around"
+          class="max-w-screen-sm mx-auto px-4 grid grid-cols-1 gap-8 justify-around"
         >
-          <div
+          <!-- <div
             class="flex flex-col items-center bg-white rounded-xl p-5 shadow-lg"
           >
             <img
@@ -228,9 +228,10 @@
               class="-mt-1 text-red-400 text-md lg:text-xl font-semibold leading-none tracking-tight"
               >6 Months</span
             >
-          </div>
+          </div> -->
+
           <div
-            class="flex flex-col items-center bg-white rounded-xl p-5 shadow-lg"
+            class="flex flex-col items-center bg-white rounded-xl p-5 shadow-lg max-w-screen-sm"
           >
             <img
               width="40"
@@ -245,11 +246,11 @@
             </span>
             <span
               class="-mt-2 text-red-400 text-md lg:text-xl font-semibold leading-none tracking-tight"
-              >30 June, 2024</span
+              >3rd June, 2024</span
             >
           </div>
 
-          <div
+          <!-- <div
             class="flex flex-col items-center bg-white rounded-xl p-5 shadow-lg"
           >
             <img
@@ -267,11 +268,49 @@
               class="-mt-2 text-red-400 text-md lg:text-xl font-semibold leading-none tracking-tight"
               >30 July 2024</span
             >
+          </div> -->
+        </div>
+      </section>
+
+      <section>
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 my-10">
+          <div class="mx-auto max-w-screen-sm text-center">
+            <h2
+              data-scroll
+              class="mb-10 text-2xl lg:text-4xl tracking-tight font-extrabold leading-tight text-[#20a4f3] capitalize animate__animated animate__fast"
+            >
+              start your tech journey
+            </h2>
+          </div>
+
+          <div class="max-w-screen-lg mx-auto">
+            <iframe
+              class="w-full min-h-[45svh] lg:min-h-[60svh]"
+              src="https://www.youtube.com/embed/CQ4WyQuw6nw?si=VxGOHAzxma-sGxUA"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="py-8 mx-auto max-w-screen-xl mt-10">
+            <div class="mx-auto max-w-screen-sm text-center">
+              <h2
+                data-scroll
+                class="mb-10 text-2xl lg:text-4xl tracking-tight font-extrabold leading-tight text-[#20a4f3] capitalize animate__animated animate__fast"
+              >
+                our training program
+              </h2>
+            </div>
+            <div
+              id="course"
+              class="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mt-20"
+            ></div>
           </div>
         </div>
       </section>
 
-      <section class="bg-gray-50">
+      <section class="bg-gray-50 hidden">
         <div class="py-20 px-4 mx-auto max-w-screen-xl">
           <div class="flex flex-col-reverse lg:flex-row gap-8 lg:gap-16">
             <iframe
@@ -333,12 +372,7 @@
               </div>
             </div>
           </div>
-          <div class="py-8 mx-auto max-w-screen-xl">
-            <div
-              id="course"
-              class="max-w-screen-lg mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 mt-20"
-            ></div>
-          </div>
+
           <p class="text-base tracking-normal mt-10 hidden">
             Are you ready to level up your tech game and become a true Tech
             Champion? Join us at Tech Champions for an immersive and
@@ -353,7 +387,6 @@
         </div>
       </section>
 
-      <section></section>
       <section class="bg_gradient">
         <div class="py-10 lg:py-20 px-4 mx-auto max-w-screen-xl">
           <div
@@ -704,52 +737,52 @@
       const courseArray = [
         {
           id: 1,
-          name: "Full Stack Training",
+          name: "Full Stack Software Development",
           detail:
             "Become a Fullstack developer and unlock endless possibilities in tech! Master both front-end and back-end development to create dynamic, user-friendly websites and applications. Enjoy lucrative job opportunities, stay ahead of the curve, and join a supportive community of tech professionals.",
           image:
             "https://images.unsplash.com/photo-1554306274-f23873d9a26c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          link: "emawodia.html",
+          link: "fullstack.html",
           duration: "6 Months",
         },
         {
           id: 2,
-          name: "Front End Training",
+          name: "Frontend Web Development",
           detail:
             "Learn to create stunning user interfaces, interactive experiences, and seamless website functionality. With sought-after skills, you can craft visually captivating designs, optimize user engagement, and elevate your digital presence. Join the forefront of tech innovation, unlock endless career opportunities, and command top salaries in the industry. Embrace the power of front-end development and shape the future of digital experience.",
           image:
             "https://images.unsplash.com/photo-1529429612779-c8e40ef2f36d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          link: "xtralarge.html",
+          link: "frontend.html",
           duration: "2 Months",
         },
         {
           id: 3,
-          name: "Back End Training",
+          name: "Backend Web Development",
           detail:
             "Dive into the world of server-side coding, databases, and API integration. With in-demand skills, you can build robust, scalable applications, enhance user experiences, and command top salaries in the tech industry.",
           image:
             "https://images.unsplash.com/photo-1637044527362-5ac1dc1d7446?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          link: "paulano.html",
+          link: "backend.html",
           duration: "2 Months",
         },
         {
           id: 4,
-          name: "Digital Marketing Training",
+          name: "Digital Marketing",
           detail:
             "Dive into a dynamic industry where creativity meets strategy. Drive business growth, engage audiences, and boost brand visibility. Harness the power of data-driven insights and cutting-edge tools to craft compelling campaigns. Become a sought-after professional with limitless opportunities for success.",
           image:
             "https://images.unsplash.com/photo-1643503640904-75c1a2093570?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          link: "dees.html",
+          link: "marketing.html",
           duration: "1 Months",
         },
         {
           id: 5,
-          name: "UI/UX Training ",
+          name: "Product Design (UI/UX)",
           detail:
             "Become a UI/UX designer to transform digital experiences! Craft visually stunning interfaces, boost user engagement, and enhance websites with seamless functionality. Unlock a world of creativity, endless career opportunities.",
           image:
             "https://images.unsplash.com/photo-1633355444159-0752f19560a4?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-          link: "dees.html",
+          link: "design.html",
           duration: "3 Months",
         },
       ];
@@ -777,7 +810,7 @@
                 </p>
                 <p class="mb-3 font-normal text-gray-700 text-base">Duration: ${item.duration}</p>
                 <a
-                  href="#"
+                  href=${item.link}
                   class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#20a4f3] rounded-lg"
                 >
                   Learn more
