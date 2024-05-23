@@ -356,19 +356,19 @@
             </div>
           </div>
 
-          <div class="mx-auto max-w-screen-md text-center mt-10 lg:mt-20">
+          <div
+            id="countdown"
+            class="mx-auto max-w-screen-md text-center mt-10 lg:mt-20"
+          >
             <h1
-              class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-[#20a4f3]"
+              data-scroll
+              class="mb-4 text-2xl lg:text-4xl font-extrabold leading-none tracking-tight text-[#20a4f3] animate__animated animate__fast"
             >
               Claim Your
-              <mark class="px-2 text-white bg-[#FCAB10] rounded"
-                >40%</mark
-              >
+              <mark class="px-2 text-white bg-[#FCAB10] rounded">40%</mark>
               Discount Promo Today
             </h1>
-            <p
-              class="text-lg font-normal text-gray-800 lg:text-xl"
-            >
+            <p class="text-lg font-normal text-gray-800 lg:text-xl">
               Don't let this opportunity pass you by. Sign up today to take
               advantage of our exclusive 40% discount offer, available only
               until June 20th. With our proven track record of success and
@@ -377,6 +377,65 @@
               entrepreneurs who have transformed their enterprises with our
               service – seize the moment and secure your future today!
             </p>
+
+            <div class="glass p-4 rounded-lg mt-6">
+              <div
+                class="max-w-screen-sm mx-auto flex flex-col items-center justify-center"
+              >
+                <div class="flex gap-2 items-start">
+                  <h1 class="text-xl font-semibold mb-3 text-red-400">
+                    Offers Ends in
+                  </h1>
+                </div>
+                <div id="timer" class=""></div>
+                <div class="flex items-center gap-2">
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-sm lg:text-md text-white bg-[#20a4f3] w-10 h-10 flex items-center justify-center font-semibold rounded-full"
+                      id="days"
+                      >00</span
+                    >
+                    <span class="text-[10px]">DAYS</span>
+                  </div>
+                  <span class="text-lg">:</span>
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-sm lg:text-md text-white bg-[#20a4f3] w-10 h-10 flex items-center justify-center font-semibold rounded-full"
+                      id="hours"
+                      >00</span
+                    >
+                    <span class="text-[10px]">HOURS</span>
+                  </div>
+                  <span class="text-lg">:</span>
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-sm lg:text-md text-white bg-[#20a4f3] w-10 h-10 flex items-center justify-center font-semibold rounded-full"
+                      id="minutes"
+                      >00</span
+                    >
+                    <span class="text-[10px]">MIN</span>
+                  </div>
+                  <span class="text-lg">:</span>
+                  <div class="flex flex-col items-center">
+                    <span
+                      class="text-sm lg:text-md text-white bg-[#20a4f3] w-10 h-10 flex items-center justify-center font-semibold rounded-full"
+                      id="seconds"
+                      >00</span
+                    >
+                    <span class="text-[10px]">SEC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a href="register.html">
+              <button
+                type="button"
+                class="text-white bg-[#20a4f3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mt-6"
+              >
+                Get Started
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -443,10 +502,9 @@
         </div>
       </section>
 
-      <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+      <section class="px-4 lg:px-6">
           <div
-            class="grid grid-cols-1 md:grid-cols-2 bg-blue-200 rounded-xl p-6"
+            class="grid grid-cols-1 lg:grid-cols-2 bg-blue-200 rounded-xl py-8 px-4 mx-auto max-w-screen-xl  lg:px-6"
           >
             <div>
               <h2
@@ -483,7 +541,7 @@
               </a>
             </div>
 
-            <div class="hidden lg:flex items-center gap-6 justify-end h-full">
+            <div class="lg:flex hidden items-center gap-6 justify-end">
               <img
                 class="block h-40 ww-40 object-cover object-center"
                 src="https://res.cloudinary.com/dyvmtgjer/image/upload/v1716305147/dialogue_ewotwv.png"
@@ -494,15 +552,12 @@
                 src="https://res.cloudinary.com/dyvmtgjer/image/upload/v1716305164/2149187290_1_xmlcr5.png"
                 alt="loading"
               />
-              <div class="relative">
                 <img
                   class="block h-40 ww-40 object-cover object-center"
                   src="https://res.cloudinary.com/dyvmtgjer/image/upload/v1716305150/Frame_1171275619_sho7mq.png"
                   alt="loading"
                 />
-              </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -526,7 +581,7 @@
         <span class="BG"></span>
       </a>
 
-      <div class="fixed bottom-2 md:bottom-10 left-2 glasss p-1 rounded-lg">
+      <div class="hidden bottom-2 md:bottom-10 left-2 glasss p-1 rounded-lg">
         <div
           class="max-w-screen-smm mx-auto flex flex-col items-start justify-start"
         >
@@ -592,7 +647,7 @@
       </div>
     </main>
 
-    <footer id="contact" class="bg-white rounded-lg m-4 pb-20">
+    <footer id="contact" class="bg-white rounded-lg m-4">
       <div
         class="w-full mx-auto max-w-screen-xl p-4 lg:p-6 md:flex md:items-center md:justify-between"
       >
@@ -630,52 +685,37 @@
       const newminutes = document.getElementById("minutes");
       const newseconds = document.getElementById("seconds");
 
-      function startCountdown(duration) {
-        const countdownElement = document.getElementById("timer");
-        let endTime = localStorage.getItem("countdownEndTime");
+      // Set the target date
+      const targetDate = new Date("2024-06-21T23:59:59").getTime(); // Change this date to your desired target date
 
-        if (!endTime) {
-          endTime = Date.now() + duration;
-          localStorage.setItem("countdownEndTime", endTime);
-        } else {
-          endTime = parseInt(endTime, 10);
+      // Update the countdown every 1 second
+      const countdownInterval = setInterval(function () {
+        // Get the current date and time
+        const now = new Date().getTime();
+
+        // Calculate the distance between now and the target date
+        const distance = targetDate - now;
+
+        // Calculate days, hours, minutes, and seconds
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        newdays.innerText = days;
+        newhours.innerText = hours;
+        newminutes.innerText = minutes;
+        newseconds.innerText = seconds;
+
+        // If the countdown is over, write some text
+        if (distance < 0) {
+          clearInterval(countdownInterval);
+          document.getElementById("countdown").classList.add("hidden");
+          document.getElementById("discount").classList.add("hidden");
         }
-
-        function updateCountdown() {
-          const now = Date.now();
-          const timeLeft = endTime - now;
-
-          if (timeLeft <= 0) {
-            countdownElement.innerHTML = "Countdown finished!";
-            clearInterval(interval);
-            localStorage.removeItem("countdownEndTime");
-            return;
-          }
-
-          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
-          );
-          const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-          newdays.innerText = days;
-          newhours.innerText = hours;
-          newminutes.innerText = minutes;
-          newseconds.innerText = seconds;
-        }
-
-        const interval = setInterval(updateCountdown, 1000);
-        updateCountdown(); // Initial call to display the countdown immediately
-      }
-
-      // 30 days in milliseconds
-      const forTwoDays = 19 * 24 * 60 * 60 * 1000; //change the day to update
-
-      // Start the countdown
-      startCountdown(forTwoDays);
+      }, 1000);
     </script>
   </body>
 </html>

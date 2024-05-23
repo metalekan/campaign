@@ -317,7 +317,7 @@
               until June 21th.
             </p>
 
-            <div class="glass p-2 rounded-lg mt-6">
+            <div class="glass p-4 rounded-lg mt-6">
               <div
                 class="max-w-screen-sm mx-auto flex flex-col items-center justify-center"
               >
@@ -366,6 +366,15 @@
                 </div>
               </div>
             </div>
+
+            <a href="register.html">
+              <button
+                type="button"
+                class="text-white bg-[#20a4f3] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center mt-6"
+              >
+                Sign up Now
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -836,8 +845,10 @@
                   ${item.duration}
                 </td>
                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
-                  ₦${item.price} 
-                  <span id="discount" class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded">${item.discount} Off</span>
+                  <div class="flex gap-1 items-center flex-wrap">
+                    <span>₦${item.price} </span>
+                    <span id="discount" class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded">${item.discount} Discount</span>
+                  </div>
 
                 </td>
                
