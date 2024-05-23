@@ -317,7 +317,7 @@
             <p class="text-lg font-normal text-gray-800 lg:text-xl">
               Don't let this opportunity pass you by. Sign up today to take
               advantage of our exclusive 10% discount offer, available only
-              until June 21th.
+              until June 21st.
             </p>
 
             <div class="glass p-4 rounded-lg mt-6">
@@ -798,7 +798,7 @@
           link: "design.html",
           duration: "4 Months",
           date: "July 1st",
-          price: "200,000",
+          price: "250,000",
           discount: "10%",
         },
       ];
@@ -829,7 +829,7 @@
         <thead class="text-xs text-gray-700 uppercase bg-gray-50">
             <tr>
                 <th scope="col" class="px-6 py-3">
-                    Date
+                    Training starts
                 </th>
                 <th scope="col" class="px-6 py-3">
                   ${item.date}
@@ -839,7 +839,7 @@
         </thead>
         <tbody>
             <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap">
                    Duration
                 </th>
                 <td class="px-6 py-4 font-semibold text-gray-900 whitespace-nowrap">
@@ -848,13 +848,13 @@
             </tr>
 
             <tr class="bg-white border-b">
-                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                <th scope="row" class="px-6 py-4 font-bold text-gray-900 whitespace-nowrap">
                    Price
                 </th>
                 <td class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
     <div class="flex flex-col gap-1 items-start flex-wrap">
       <span class="font-semibold">₦${item.price} </span>
-      <span id="discount" class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded">${item.discount} Discount Apply within</span>
+      <span id="discount" class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded">${item.discount} Discount Apply during the promo period</span>
     </div>
 
   </td>
@@ -865,27 +865,36 @@
     </table>
 </div>
 
-                <a
-                  href=${item.link}
-                  class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#20a4f3] rounded-lg"
-                >
-                  Learn more
-                  <svg
-                    class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
+                <div class="flex items-center gap-3">
+                  <a
+                    href=${item.link}
+                    class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#20a4f3] rounded-lg"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    />
-                  </svg>
-                </a>
+                    Learn more
+                    <svg
+                      class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 14 10"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M1 5h12m0 0L9 1m4 4L9 9"
+                      />
+                    </svg>
+                  </a>
+
+                  <a
+                    href="register.html"
+                    class="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-gray-900 border border-gray-700 bg-transparent rounded-lg"
+                  >
+                    Sign up Now
+                  </a>
+                </div>
               </div>
             </div>
 
