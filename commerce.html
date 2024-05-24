@@ -504,7 +504,7 @@
 
       <section class="px-4 lg:px-6">
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 bg-blue-200 rounded-xl py-8 px-4 mx-auto max-w-screen-xl  lg:px-6"
+            class="flex items-center justify-between bg-blue-200 rounded-xl py-8 px-4 mx-auto max-w-screen-xl lg:px-6"
           >
             <div>
               <h2
@@ -541,7 +541,11 @@
               </a>
             </div>
 
-            <div class="lg:flex hidden items-center gap-6 justify-end">
+            <div class="flex justify-start lg:justify-end">
+              <img class="h-24 lg:h-48 object-contain object-center" src="https://res-console.cloudinary.com/dyvmtgjer/thumbnails/v1/image/upload/v1716455124/TWFya2V0aW5nLWFtaWNvX3hva2RoNQ==/drilldown" alt="loading">
+            </div>
+
+            <div class="hidden items-center gap-6 justify-end">
               <img
                 class="block h-40 ww-40 object-cover object-center"
                 src="https://res.cloudinary.com/dyvmtgjer/image/upload/v1716305147/dialogue_ewotwv.png"
@@ -580,71 +584,7 @@
         </span>
         <span class="BG"></span>
       </a>
-
-      <div class="hidden bottom-2 md:bottom-10 left-2 glasss p-1 rounded-lg">
-        <div
-          class="max-w-screen-smm mx-auto flex flex-col items-start justify-start"
-        >
-          <div class="flex gap-2 items-start">
-            <svg
-              class="w-4 h-4 text-gray-800 animate-bounce"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="none"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.193-.538 1.193H5.538c-.538 0-.538-.6-.538-1.193 0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365Zm-8.134 5.368a8.458 8.458 0 0 1 2.252-5.714m14.016 5.714a8.458 8.458 0 0 0-2.252-5.714M8.54 17.901a3.48 3.48 0 0 0 6.92 0H8.54Z"
-              />
-            </svg>
-            <h1 class="text-xs mb-3">Offers Ends in</h1>
-          </div>
-          <div id="timer" class=""></div>
-          <div class="flex items-center gap-2">
-            <div class="flex flex-col items-center">
-              <span
-                class="text-sm lg:text-md text-white bg-[#20a4f3] p-2 rounded-full"
-                id="days"
-                >00</span
-              >
-              <span class="text-[10px]">DAYS</span>
-            </div>
-            <span class="text-lg">:</span>
-            <div class="flex flex-col items-center">
-              <span
-                class="text-sm lg:text-md text-white bg-[#20a4f3] p-2 rounded-full"
-                id="hours"
-                >00</span
-              >
-              <span class="text-[10px]">HOURS</span>
-            </div>
-            <span class="text-lg">:</span>
-            <div class="flex flex-col items-center">
-              <span
-                class="text-sm lg:text-md text-white bg-[#20a4f3] p-2 rounded-full"
-                id="minutes"
-                >00</span
-              >
-              <span class="text-[10px]">MIN</span>
-            </div>
-            <span class="text-lg">:</span>
-            <div class="flex flex-col items-center">
-              <span
-                class="text-sm lg:text-md text-white bg-[#20a4f3] p-2 rounded-full"
-                id="seconds"
-                >00</span
-              >
-              <span class="text-[10px]">SEC</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </main>
 
     <footer id="contact" class="bg-white rounded-lg m-4">
