@@ -17,11 +17,6 @@ main {
   padding: 0 0 50px 0;
 }
 
-.bg_gradient {
-  background-color: #20a4f3;
-  /* background: rgb(2,0,36); */
-  /* background: linear-gradient(99deg, rgba(2,0,36,1) 0%, rgba(32,164,243,1) 50%, rgba(0,212,255,1) 100%);     */
-}
 
 .cardd {
   display: flex;

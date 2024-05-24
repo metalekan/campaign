@@ -60,7 +60,9 @@
           <p
             class="mb-8 text-lg font-normal text-white lg:text-xl sm:px-16 xl:px-48 max-w-screen-lg mx-auto animate__animated animate__fast"
           >
-          Are you ready to take your business to the next level? Look no further. With our 40% discount promo currently running from May 20th to June 15th
+            Are you ready to take your business to the next level? Look no
+            further. With our 40% discount promo currently running from May 20th
+            to June 15th
           </p>
           <div class="flex items-center gap-3 lg:gap-6">
             <a href="register.html">
@@ -83,6 +85,72 @@
         </div>
       </section>
 
+      <section class="bg-gray-100">
+        <div
+          class="py-10 lg:py-20 px-4 mx-auto max-w-screen-xl flex flex-col items-center justify-center"
+        >
+          <div
+            class="gap-10 lg:gap-16 items-center flex flex-col-reverse lg:flex-row h-full"
+          >
+            <div class="h-full w-full">
+              <iframe
+                class="w-full min-h-[45svh] lg:min-h-[60svh]"
+                src="https://www.youtube.com/embed/8fpkHMdTpqg?si=Hb-MEL33-M-gi-fR"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="mt-4 md:mt-0 text-gray-900">
+              <h1
+                data-scroll
+                class="mb-4 text-2xl font-extrabold leading-none md:text-2xl lg:text-4xl max-w-screen-lg mx-auto animate__animated animate__fast text-[#20a4f3]"
+              >
+                Here's what our <mark
+                  class="px-2 text-white bg-[#FCAB10] rounded"
+                  >40%</mark
+                >
+                discount promo offers:
+              </h1>
+              <p class="mb-4 text-base tracking-wide">
+                At Tech Champion, we pride ourselves on giving businesses a
+                professional look. We've helped countless businesses transform
+                their online presence and achieve remarkable results. It's time
+                for you to experience the power of our services firsthand.
+              </p>
+              <a href="register.html">
+                <button
+                  type="button"
+                  class="text-white bg-[#20a4f3] hover:bg-[#20a4f3] focus:outline-none focus:ring-4 focus:ring-blue-300 font-semibold rounded-full text-sm px-5 py-2.5 text-center me-2 mt-4 mb-2 w-fit"
+                >
+                  Apply Today
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <p class="my-4 text-base tracking-wide">
+            Imagine having a stunning website that not only captures the
+            attention of your audience but also keeps them coming back for more.
+            With our expertise in website design and development, we'll create a
+            digital masterpiece that reflects your brand's unique personality
+            and resonates with your target market.
+          </p>
+          <p class="mb-4 text-base tracking-wide">
+            But that's not all. We offer secure and reliable web hosting,
+            ensuring that your data stays protected and your website remains
+            accessible around the clock. Say goodbye to downtime and hello to
+            uninterrupted business growth.
+          </p>
+          <p class="mb-4 text-base tracking-wide">
+            And let's not forget about mobile apps. In today's fast-paced world,
+            having a mobile presence is crucial. Our mobile app development
+            services will help you engage with customers on the go, increase
+            brand loyalty, and drive sales like never before.
+          </p>
+        </div>
+      </section>
+
       <section>
         <div class="max-w-screen-xl mx-auto px-4 lg:px-6 py-10 mt-10">
           <div class="mx-auto max-w-screen-md text-center">
@@ -100,7 +168,7 @@
 
           <div
             id="service"
-            class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0 mt-6"
+            class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-6"
           ></div>
         </div>
       </section>
@@ -144,7 +212,7 @@
               </button>
             </a>
           </div>
-          <a class="hiddenn lg:block" href="register.html"
+          <a class="hidden lg:block" href="register.html"
             ><button class="button">Register Now</button></a
           >
         </div>
@@ -155,7 +223,7 @@
       const serviceArray = [
         {
           id: 1,
-          name: "Website Design & Development",
+          name: "Elevate Your Online Presence",
           detail:
             "Learn from industry professionals who are experts in their field and passionate about sharing their ",
           image:
@@ -163,7 +231,7 @@
         },
         {
           id: 2,
-          name: "Tailored Software Solutions",
+          name: "Boost Your Reach",
           detail:
             "We build Professional Websites that are BRAND FOCUSED and RESULT ORIENTED. Our designs are tailored to meet your specific business needs. ",
           image:
@@ -171,7 +239,7 @@
         },
         {
           id: 3,
-          name: "Digital Marketing Strategies",
+          name: "Power Up Your Operations",
           detail:
             "It doesn't stop with having a website. The world need to know about your website before they can visit it. We offer various digital marketing strategies",
           image:
@@ -179,7 +247,7 @@
         },
         {
           id: 4,
-          name: "Creative Graphics Design",
+          name: "Captivate Your Audiences",
           detail:
             "Our team of highly experienced designers can create mouth watering and high quality graphics designs. We design custom posters, Adverts",
           image:
@@ -187,15 +255,23 @@
         },
         {
           id: 5,
-          name: "High-Quality Video Production",
+          name: "Stand Out in Style",
           detail:
             "We produce high quality campaign videos for the digital marketing of your products and services. Our video editing services include Video Adverts",
           image:
             "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-          id: 4,
-          name: "Corporate Branding Expertise",
+          id: 6,
+          name: "Secure Your Identity",
+          detail:
+            "We create a unique and distinct identity for your organization. With our team of professionals, we help your organization build recognition and reputation.",
+          image:
+            "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        },
+        {
+          id: 7,
+          name: "Define Your Brand",
           detail:
             "We create a unique and distinct identity for your organization. With our team of professionals, we help your organization build recognition and reputation.",
           image:
@@ -211,10 +287,10 @@
                 class="p-5 lg:p-8 rounded-lg bg-gray-50 text-center flex flex-col items-center shadow"
               >
                 <div
-                  class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#bae2fd]"
+                  class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#2F327D]"
                 >
                   <svg
-                    class="w-6 h-6 text-[#082b49]"
+                    class="w-6 h-6 text-[#00CBB8]"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -242,6 +318,22 @@
         .join("");
 
       serviceContainer.innerHTML = serviceHTML;
+
+      let el2 = document.querySelector(".banner");
+      el2.setAttribute("data-scroll", "");
+
+      ScrollOut({
+        onShown: function (el2) {
+          // remove the class
+          el2.classList.remove("animate__zoomIn");
+
+          // force reflow
+          void el2.offsetWidth;
+
+          // re-add the animated cl
+          el2.classList.add("animate__zoomIn");
+        },
+      });
     </script>
   </body>
 </html>
