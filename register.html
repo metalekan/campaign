@@ -69,15 +69,17 @@
             <input
               id="businessName"
               type="text"
-              class="bg-gray-50 border border-gray-300 text-gray-50 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full ps-10 p-2.5"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#20a4f3] focus:border-[#20a4f3] block w-full ps-10 p-2.5"
             />
           </div>
           <small
             id="businessNameError"
+
             class="hidden text-sm text-red-600 dark:text-red-500"
             ><span class="font-medium">Oops!</span> Full name can not be
             empty!</small
           >
+          <button onclick="speak()">Speak</button>
         </div>
 
         <div>
@@ -227,5 +229,13 @@
       </form>
     </main>
     <script src="register.js"></script>
+    <script>
+      function speak() {
+        let text = document.getElementById("businessName").value;
+        let utterance = new SpeechSynthesisUtterance(text);
+        speechSynthesis.speak(utterance);
+      }
+
+    </script>
   </body>
 </html>
