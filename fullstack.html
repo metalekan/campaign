@@ -71,7 +71,7 @@
         <div
           class="max-w-screen-xl mx-auto px-4 lg:px-6 grid lg:grid-cols-2 gap-6"
         >
-          <div class="flex flex-col-reverse lg:flex-col gap-6">
+          <div class="flex flex-col-reverse lg:flex-col gap-2 lg:gap-4">
             <h2
               class="text-2xl lg:text-3xl font-semibold text-[#20a4f3] mb-3 tracking-normal"
             >
@@ -90,39 +90,21 @@
     <script>
       const courseArray = [
         {
-          id: 0,
-          topic: "",
-          list: [],
+          id: 1,
+          topic: "Frontend Web Developmet",
+          list: [
+          `<a class="hover:text-black" href="frontend.html">Click here</a>`,
+
+          ],
         },
         ,
         {
-          id: 0,
-          topic: "",
-          list: [],
-        },
-        ,
-        {
-          id: 0,
-          topic: "",
-          list: [],
-        },
-        {
-          id: 0,
-          topic: "",
-          list: [],
-        },
-        ,
-        {
-          id: 0,
-          topic: "",
-          list: [],
-        },
-        ,
-        {
-          id: 0,
-          topic: "",
-          list: [],
-        },
+          id: 2,
+          topic: "Backend Web Develpoement",
+          list: [
+            `<a class="hover:text-black" href="backend.html">Click here</a>`,
+          ],
+        }
       ];
       const courseContainer = document.getElementById("accordion-collapse");
       const courseHTML = courseArray
