@@ -38,7 +38,7 @@
     <title>Tech Champions: Services</title>
   </head>
   <body>
-    <main>
+    <main class="bg-gray-50">
       <section
         class="bg-gray-500 bg-[url('https://res.cloudinary.com/dyvmtgjer/image/upload/v1716539775/Rectangle_17907_hlgvpr.png')] bg-cover bg-center bg-no-repeat py-20 banner"
       >
@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <section class="bg-gray-100">
+      <section class="">
         <div
           class="py-10 lg:py-20 px-4 mx-auto max-w-screen-xl flex flex-col items-center justify-center"
         >
@@ -152,7 +152,37 @@
       </section>
 
       <section>
-        <div class="max-w-screen-xl mx-auto px-4 lg:px-6 py-10 mt-10">
+        <div
+          class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-lg xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-6"
+        >
+        <div class="mt-10 md:mt-0">
+          <h2
+            class="mb-4 text-4xl tracking-tight font-extrabold text-[#20a4f3]"
+          >
+          What awaits you when you work with us!
+          </h2>
+          <p class="mb-6 font-normal text-gray-500 md:text-lg">
+            Imagine having a stunning website that not only captures the attention of your audience but also keeps them coming back for more. We'll create a digital masterpiece that reflects your brand's unique personality and resonates with your target market. 
+
+          </p>
+          <a
+            href="#"
+            class="inline-flex items-center px-3 py-2 text-sm font-medium text-center rounded-full text-white bg-[#20a4f3] duration-500 w-fit"
+          >
+            Register Now
+          </a>
+        </div>
+          <img
+            class="w-full"
+            src="https://res.cloudinary.com/dyvmtgjer/image/upload/v1716540370/44022_1_uowfuu.png"
+            alt="loading"
+          />
+          
+        </div>
+      </section>
+
+      <section class="">
+        <div class="max-w-screen-xl mx-auto px-4 lg:px-6 py-10">
           <div class="mx-auto max-w-screen-md text-center">
             <h2
               class="text-center mb-4 text-2xl lg:text-4xl font-extrabold capitalize text-[#20a4f3]"
@@ -168,22 +198,22 @@
 
           <div
             id="service"
-            class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0 mt-6"
+            class="space-y-8 md:grid md:grid-cols-2 md:gap-8 md:space-y-0 mt-6"
           ></div>
         </div>
       </section>
-
-      <section class="px-4 lg:px-6 mt-10 lg:mt-20">
+     
+      <section class="px-4  mt-20">
         <div
-          class="px-6 lg:px-10 py-10 mb-10 lg:mb-20 mx-auto max-w-screen-xl flex items-center justify-between bg-[#e0f0fe] rounded-2xl"
+          class="px-4 lg:px-6 xl:px-20 py-5 lg:py-10 mb-10 mx-auto max-w-screen-xl text-center flex items-center justify-between bg-[#20a4f3] rounded-2xl"
         >
-          <div>
-            <h2
-              class="mb-4 text-2xl lg:text-3xl tracking-tight font-extrabold leading-tight text-gray-800 capitalize"
+          <div class="text-start">
+            <h1
+              class="basis-1/2 mb-4 text-lg font-extrabold tracking-normal leading-none lg:text-2xl text-gray-900 max-w-md capitalize"
             >
-              Start building today!
-            </h2>
-            <p class="mb-6 text-gray-800 md:text-lg max-w-md">
+            Start building today!
+            </h1>
+            <p class="mb-6 text-gray-800 max-w-sm text-sm">
               Contact us today and let's start crafting your digital success
               story. The world is waiting for you – don't keep them waiting any
               longer.
@@ -191,28 +221,13 @@
             <a href="register.html">
               <button
                 type="button"
-                class="text-gray-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center inline-flex items-center"
+                class="text-gray-900 bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2 text-center inline-flex items-center"
               >
                 Get Started
-                <svg
-                  class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
               </button>
             </a>
           </div>
-          <a class="hidden lg:block" href="register.html"
+          <a href="register.html"
             ><button class="button">Register Now</button></a
           >
         </div>
@@ -223,60 +238,36 @@
       const serviceArray = [
         {
           id: 1,
-          name: "Elevate Your Online Presence",
+          name: "Tailored Software solutions",
           detail:
-            "Learn from industry professionals who are experts in their field and passionate about sharing their ",
-          image:
-            "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 2,
-          name: "Boost Your Reach",
-          detail:
-            "We build Professional Websites that are BRAND FOCUSED and RESULT ORIENTED. Our designs are tailored to meet your specific business needs. ",
+            "Our tailored software solutions service is designed to meet the unique needs of your business. We specialize in creating customized software applications that are specifically tailored to your requirements. ",
           image:
             "https://images.unsplash.com/photo-1604145559206-e3bce0040e2d?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
-          id: 3,
-          name: "Power Up Your Operations",
+          id: 2,
+          name: "Website Design and Development",
           detail:
-            "It doesn't stop with having a website. The world need to know about your website before they can visit it. We offer various digital marketing strategies",
+            "Looking to elevate your online presence? Our website development service offers tailor-made solutions to help you create a stunning and user-friendly website that resonates with your brand.",
+          image:
+            "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        },
+        {
+          id: 3,
+          name: "Digital Marketing Services",
+          detail:
+            "Digital marketing services encompass a wide range of strategies and tactics aimed at promoting businesses, products, or services online. From search engine optimization (SEO) and pay-per-click (PPC) advertising to social media marketing, email marketing, content creation, and more.",
           image:
             "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
           id: 4,
-          name: "Captivate Your Audiences",
+          name: "Creative graphic design service",
           detail:
-            "Our team of highly experienced designers can create mouth watering and high quality graphics designs. We design custom posters, Adverts",
+            "Creative graphic design services involve the creation of visually appealing and engaging designs that effectively communicate a brand's message or story. From logo design and branding to social media graphics, website visuals, marketing materials, and more",
           image:
             "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 5,
-          name: "Stand Out in Style",
-          detail:
-            "We produce high quality campaign videos for the digital marketing of your products and services. Our video editing services include Video Adverts",
-          image:
-            "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 6,
-          name: "Secure Your Identity",
-          detail:
-            "We create a unique and distinct identity for your organization. With our team of professionals, we help your organization build recognition and reputation.",
-          image:
-            "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
-        {
-          id: 7,
-          name: "Define Your Brand",
-          detail:
-            "We create a unique and distinct identity for your organization. With our team of professionals, we help your organization build recognition and reputation.",
-          image:
-            "https://images.unsplash.com/photo-1531498860502-7c67cf02f657?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        },
+        }
       ];
 
       const serviceContainer = document.getElementById("service");
@@ -284,7 +275,7 @@
         .map(
           (item, index) => `
           <div
-                class="p-5 lg:p-8 rounded-lg bg-gray-50 text-center flex flex-col items-center shadow"
+                class="p-5 lg:p-8 rounded-lg bg-white text-center flex flex-col items-center shadow"
               >
                 <div
                   class="flex justify-center items-center mb-4 w-10 h-10 rounded-full lg:h-12 lg:w-12 bg-[#2F327D]"
@@ -305,7 +296,7 @@
                     />
                   </svg>
                 </div>
-                <h3 class="mb-2 text-xl font-bold text-[#20a4f3]">
+                <h3 class="capitalize mb-2 text-xl lg:text-2xl font-bold text-[#20a4f3]">
                   ${item.name}
                 </h3>
                 <p class="text-gray-700">
