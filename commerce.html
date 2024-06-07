@@ -25,6 +25,12 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <title>Tech Champions: E-commerce</title>
@@ -149,7 +155,7 @@
         </div>
       </section>
 
-      <section class="bg-blue-300">
+      <section class="bg-gray-100">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-md text-center">
             <h2
@@ -460,7 +466,7 @@
         </div>
       </section>
 
-      <section class="bg-white">
+      <section class="bg-gray-100">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
           <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
             <h2
@@ -469,9 +475,17 @@
               Imagine Having an E-commerce Website Where you Enjoy The Following
             </h2>
           </div>
-          <div class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 py-8 px-4">
-            <img class="rounded-lg" src="https://s3.envato.com/files/356515805/134.jpg" alt="">
-            <ul class="mmax-w-md space-y-1 text-gray-600 list-inside">
+          <div
+            class="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6 py-8 px-4"
+          >
+            <img
+              class="rounded-lg"
+              src="https://s3.envato.com/files/356515805/134.jpg"
+              alt=""
+            />
+            <ul
+              class="mmax-w-md space-y-1 text-gray-600 list-inside p-4 border-2 border-gray-200 rounded-lg shadow self-center w-full"
+            >
               <li class="flex items-center">
                 <svg
                   class="w-3.5 h-3.5 me-2 text-green-500 flex-shrink-0"
@@ -600,20 +614,24 @@
               </li>
             </ul>
           </div>
-           <!-- Pricing Card -->
-           <div class="w-full px-4 mb-8 lg:mb-0 mx-auto max-w-[380px]">
+          <!-- Pricing Card -->
+          <div class="w-full px-4 mb-8 lg:mb-0 mx-auto max-w-[380px]">
             <div
-              class="max-w-sm lg:max-w-none mx-auto pt-10 px-10 pb-8 bg-gray-100 rounded-3xl"
+              class="max-w-sm lg:max-w-none mx-auto pt-10 px-10 pb-8 bg-white rounded-3xl"
             >
               <div class="text-center mb-6">
-                <h5 class="text-2xl font-semibold text-gray-800 mb-3">Standard</h5>
-                <span class="block text-5xl font-bold text-gray-800 mb-3">₦250,000</span>
+                <h5 class="text-2xl font-semibold text-gray-800 mb-3">
+                  Standard
+                </h5>
+                <span class="block text-5xl font-bold text-gray-800 mb-3"
+                  >₦250,000</span
+                >
                 <span class="block text-gray-600 font-medium mb-6"
                   >per user</span
                 >
                 <a
                   href="#"
-                  class="relative group inline-block w-full py-4 px-6 text-center text-gray-800 hover:text-gray-50 bg-yellow-300 font-semibold rounded-full overflow-hidden transition duration-200"
+                  class="relative group inline-block w-full py-4 px-6 text-center text-gray-800 hover:text-gray-50 bg-yellow-300 font-semibold rounded-full overflow-hidden transition duration-200 hidden"
                 >
                   <div
                     class="absolute top-0 right-full w-full h-full bg-gray-900 transform group-hover:translate-x-full group-hover:scale-102 transition duration-500"
@@ -632,7 +650,9 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-800">Unlimited Features</span>
+                  <span class="ml-2 text-gray-800"
+                    >One year domain name of your choice</span
+                  >
                 </li>
                 <li class="flex mb-4 items-center">
                   <svg
@@ -644,7 +664,10 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-800">Enhanced Security</span>
+                  <span class="ml-2 text-gray-800"
+                    >One year Server Hosting that can accommodate thousands of
+                    traffic</span
+                  >
                 </li>
                 <li class="flex mb-4 items-center">
                   <svg
@@ -656,7 +679,7 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-800">Priority Support</span>
+                  <span class="ml-2 text-gray-800"></span>
                 </li>
                 <li class="flex mb-4 items-center">
                   <svg
@@ -668,7 +691,23 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-800">Exclusive Access</span>
+                  <span class="ml-2 text-gray-800"
+                    >Beautiful and Stunning User Interface</span
+                  >
+                </li>
+                <li class="flex mb-4 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    class="w-6 h-6 fill-current text-gray-800"
+                  >
+                    <path
+                      d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
+                    ></path>
+                  </svg>
+                  <span class="ml-2 text-gray-800"
+                    >Unlimited Products and Image uploads</span
+                  >
                 </li>
                 <li class="flex mb-4 items-center">
                   <svg
@@ -680,7 +719,10 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-500 line-through">Ad-free Experience</span>
+                  <span class="ml-2 text-gray-500 line-through"
+                    >Responsive Design that can work on all browsers and mobile
+                    devices</span
+                  >
                 </li>
                 <li class="flex items-center">
                   <svg
@@ -692,11 +734,83 @@
                       d="M7.293 13.293l-3-3a1 1 0 011.414-1.414L8 12.586l8.293-8.293a1 1 0 111.414 1.414l-9 9a1 1 0 01-1.414 0z"
                     ></path>
                   </svg>
-                  <span class="ml-2 text-gray-800">Customization Options</span>
+                  <span class="ml-2 text-gray-800"
+                    >Free 6 Months Website Maintenance</span
+                  >
                 </li>
               </ul>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="swiper h-[70svh] lg:h-[80svh]">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper relative">
+            <!-- Slides -->
+            <div
+              class="swiper-slide w-full h-full bg-[url('https://res.cloudinary.com/dyvmtgjer/image/upload/v1717724862/OPTY431_wfkonf.jpg')] bg-cover bg-center bg-no-repeat flex justify-center items-center"
+            >
+              <button
+                class="relative py-2 px-8 text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+              >
+                SEE MORE!
+              </button>
+            </div>
+            <div
+              class="swiper-slide w-full h-full bg-[url('https://res.cloudinary.com/dyvmtgjer/image/upload/v1717724842/1463_upplvv.jpg')] bg-cover bg-center bg-no-repeat flex justify-center items-center"
+            >
+              <button
+                class="relative py-2 px-8 text-black text-base font-bold nded-full overflow-hidden bg-white rounded-full transition-all duration-400 ease-in-out shadow-md hover:scale-105 hover:text-white hover:shadow-lg active:scale-90 before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-blue-500 before:to-blue-300 before:transition-all before:duration-500 before:ease-in-out before:z-[-1] before:rounded-full hover:before:left-0"
+              >
+                SEE MORE!
+              </button>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination">
+            <i class="bi bi-dot"></i>
+          </div> -->
+
+          <!-- If we need navigation buttons -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 swiper-button-prev hover:text-blue-800"
+            viewBox="0 0 48 48"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="4"
+            >
+              <path
+                d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+              />
+              <path stroke-linecap="round" d="m27 33l-9-9l9-9" />
+            </g>
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-10 swiper-button-next hover:text-blue-800"
+            viewBox="0 0 48 48"
+          >
+            <g
+              fill="none"
+              stroke="currentColor"
+              stroke-linejoin="round"
+              stroke-width="4"
+            >
+              <path
+                d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"
+              />
+              <path stroke-linecap="round" d="m21 33l9-9l-9-9" />
+            </g>
+          </svg>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
         </div>
       </section>
 
@@ -850,9 +964,9 @@
       </a>
     </main>
 
-    <footer id="contact" class="bg-white rounded-lg m-4">
+    <footer id="contact" class="m-4">
       <div
-        class="w-full mx-auto max-w-screen-xl p-4 lg:p-6 md:flex md:items-center md:justify-between"
+        class="w-full mx-auto max-w-screen-xl rounded-lg p-4 lg:p-6 md:flex md:items-center md:justify-between"
       >
         <span class="text-sm text-gray-500 sm:text-center">
           <a
@@ -919,6 +1033,31 @@
           document.getElementById("discount").classList.add("hidden");
         }
       }, 1000);
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+          delay: 4000,
+        },
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
     </script>
   </body>
 </html>
